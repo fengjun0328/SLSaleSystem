@@ -1,0 +1,2594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="msyql">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.14">
+    <root id="1">
+      <ServerVersion>5.1.73</ServerVersion>
+      <DefaultEngine>MyISAM</DefaultEngine>
+      <DefaultTmpEngine>MyISAM</DefaultTmpEngine>
+      <DefaultCasing>exact</DefaultCasing>
+    </root>
+    <schema id="2" parent="1" name="information_schema">
+      <Collation>utf8_general_ci</Collation>
+    </schema>
+    <schema id="3" parent="1" name="mysql">
+      <Collation>latin1_swedish_ci</Collation>
+    </schema>
+    <schema id="4" parent="1" name="slsaledb">
+      <Current>1</Current>
+      <Visible>1</Visible>
+      <Collation>utf8_unicode_ci</Collation>
+    </schema>
+    <schema id="5" parent="1" name="test">
+      <Collation>latin1_swedish_ci</Collation>
+    </schema>
+    <collation id="6" parent="1" name="armscii8_bin">
+      <Charset>armscii8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="7" parent="1" name="armscii8_general_ci">
+      <Charset>armscii8</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="8" parent="1" name="ascii_bin">
+      <Charset>ascii</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="9" parent="1" name="ascii_general_ci">
+      <Charset>ascii</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="10" parent="1" name="big5_bin">
+      <Charset>big5</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="11" parent="1" name="big5_chinese_ci">
+      <Charset>big5</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="12" parent="1" name="binary">
+      <Charset>binary</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="13" parent="1" name="cp1250_bin">
+      <Charset>cp1250</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="14" parent="1" name="cp1250_croatian_ci">
+      <Charset>cp1250</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="15" parent="1" name="cp1250_czech_cs">
+      <Charset>cp1250</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="16" parent="1" name="cp1250_general_ci">
+      <Charset>cp1250</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="17" parent="1" name="cp1250_polish_ci">
+      <Charset>cp1250</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="18" parent="1" name="cp1251_bin">
+      <Charset>cp1251</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="19" parent="1" name="cp1251_bulgarian_ci">
+      <Charset>cp1251</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="20" parent="1" name="cp1251_general_ci">
+      <Charset>cp1251</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="21" parent="1" name="cp1251_general_cs">
+      <Charset>cp1251</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="22" parent="1" name="cp1251_ukrainian_ci">
+      <Charset>cp1251</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="23" parent="1" name="cp1256_bin">
+      <Charset>cp1256</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="24" parent="1" name="cp1256_general_ci">
+      <Charset>cp1256</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="25" parent="1" name="cp1257_bin">
+      <Charset>cp1257</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="26" parent="1" name="cp1257_general_ci">
+      <Charset>cp1257</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="27" parent="1" name="cp1257_lithuanian_ci">
+      <Charset>cp1257</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="28" parent="1" name="cp850_bin">
+      <Charset>cp850</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="29" parent="1" name="cp850_general_ci">
+      <Charset>cp850</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="30" parent="1" name="cp852_bin">
+      <Charset>cp852</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="31" parent="1" name="cp852_general_ci">
+      <Charset>cp852</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="32" parent="1" name="cp866_bin">
+      <Charset>cp866</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="33" parent="1" name="cp866_general_ci">
+      <Charset>cp866</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="34" parent="1" name="cp932_bin">
+      <Charset>cp932</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="35" parent="1" name="cp932_japanese_ci">
+      <Charset>cp932</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="36" parent="1" name="dec8_bin">
+      <Charset>dec8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="37" parent="1" name="dec8_swedish_ci">
+      <Charset>dec8</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="38" parent="1" name="eucjpms_bin">
+      <Charset>eucjpms</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="39" parent="1" name="eucjpms_japanese_ci">
+      <Charset>eucjpms</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="40" parent="1" name="euckr_bin">
+      <Charset>euckr</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="41" parent="1" name="euckr_korean_ci">
+      <Charset>euckr</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="42" parent="1" name="gb2312_bin">
+      <Charset>gb2312</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="43" parent="1" name="gb2312_chinese_ci">
+      <Charset>gb2312</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="44" parent="1" name="gbk_bin">
+      <Charset>gbk</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="45" parent="1" name="gbk_chinese_ci">
+      <Charset>gbk</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="46" parent="1" name="geostd8_bin">
+      <Charset>geostd8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="47" parent="1" name="geostd8_general_ci">
+      <Charset>geostd8</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="48" parent="1" name="greek_bin">
+      <Charset>greek</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="49" parent="1" name="greek_general_ci">
+      <Charset>greek</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="50" parent="1" name="hebrew_bin">
+      <Charset>hebrew</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="51" parent="1" name="hebrew_general_ci">
+      <Charset>hebrew</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="52" parent="1" name="hp8_bin">
+      <Charset>hp8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="53" parent="1" name="hp8_english_ci">
+      <Charset>hp8</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="54" parent="1" name="keybcs2_bin">
+      <Charset>keybcs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="55" parent="1" name="keybcs2_general_ci">
+      <Charset>keybcs2</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="56" parent="1" name="koi8r_bin">
+      <Charset>koi8r</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="57" parent="1" name="koi8r_general_ci">
+      <Charset>koi8r</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="58" parent="1" name="koi8u_bin">
+      <Charset>koi8u</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="59" parent="1" name="koi8u_general_ci">
+      <Charset>koi8u</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="60" parent="1" name="latin1_bin">
+      <Charset>latin1</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="61" parent="1" name="latin1_danish_ci">
+      <Charset>latin1</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="62" parent="1" name="latin1_general_ci">
+      <Charset>latin1</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="63" parent="1" name="latin1_general_cs">
+      <Charset>latin1</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="64" parent="1" name="latin1_german1_ci">
+      <Charset>latin1</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="65" parent="1" name="latin1_german2_ci">
+      <Charset>latin1</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="66" parent="1" name="latin1_spanish_ci">
+      <Charset>latin1</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="67" parent="1" name="latin1_swedish_ci">
+      <Charset>latin1</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="68" parent="1" name="latin2_bin">
+      <Charset>latin2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="69" parent="1" name="latin2_croatian_ci">
+      <Charset>latin2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="70" parent="1" name="latin2_czech_cs">
+      <Charset>latin2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="71" parent="1" name="latin2_general_ci">
+      <Charset>latin2</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="72" parent="1" name="latin2_hungarian_ci">
+      <Charset>latin2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="73" parent="1" name="latin5_bin">
+      <Charset>latin5</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="74" parent="1" name="latin5_turkish_ci">
+      <Charset>latin5</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="75" parent="1" name="latin7_bin">
+      <Charset>latin7</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="76" parent="1" name="latin7_estonian_cs">
+      <Charset>latin7</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="77" parent="1" name="latin7_general_ci">
+      <Charset>latin7</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="78" parent="1" name="latin7_general_cs">
+      <Charset>latin7</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="79" parent="1" name="macce_bin">
+      <Charset>macce</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="80" parent="1" name="macce_general_ci">
+      <Charset>macce</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="81" parent="1" name="macroman_bin">
+      <Charset>macroman</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="82" parent="1" name="macroman_general_ci">
+      <Charset>macroman</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="83" parent="1" name="sjis_bin">
+      <Charset>sjis</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="84" parent="1" name="sjis_japanese_ci">
+      <Charset>sjis</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="85" parent="1" name="swe7_bin">
+      <Charset>swe7</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="86" parent="1" name="swe7_swedish_ci">
+      <Charset>swe7</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="87" parent="1" name="tis620_bin">
+      <Charset>tis620</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="88" parent="1" name="tis620_thai_ci">
+      <Charset>tis620</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="89" parent="1" name="ucs2_bin">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="90" parent="1" name="ucs2_czech_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="91" parent="1" name="ucs2_danish_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="92" parent="1" name="ucs2_esperanto_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="93" parent="1" name="ucs2_estonian_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="94" parent="1" name="ucs2_general_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="95" parent="1" name="ucs2_general_mysql500_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="96" parent="1" name="ucs2_hungarian_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="97" parent="1" name="ucs2_icelandic_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="98" parent="1" name="ucs2_latvian_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="99" parent="1" name="ucs2_lithuanian_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="100" parent="1" name="ucs2_persian_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="101" parent="1" name="ucs2_polish_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="102" parent="1" name="ucs2_roman_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="103" parent="1" name="ucs2_romanian_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="104" parent="1" name="ucs2_slovak_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="105" parent="1" name="ucs2_slovenian_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="106" parent="1" name="ucs2_spanish2_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="107" parent="1" name="ucs2_spanish_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="108" parent="1" name="ucs2_swedish_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="109" parent="1" name="ucs2_turkish_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="110" parent="1" name="ucs2_unicode_ci">
+      <Charset>ucs2</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="111" parent="1" name="ujis_bin">
+      <Charset>ujis</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="112" parent="1" name="ujis_japanese_ci">
+      <Charset>ujis</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="113" parent="1" name="utf8_bin">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="114" parent="1" name="utf8_czech_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="115" parent="1" name="utf8_danish_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="116" parent="1" name="utf8_esperanto_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="117" parent="1" name="utf8_estonian_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="118" parent="1" name="utf8_general_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>1</DefaultForCharset>
+    </collation>
+    <collation id="119" parent="1" name="utf8_general_mysql500_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="120" parent="1" name="utf8_hungarian_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="121" parent="1" name="utf8_icelandic_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="122" parent="1" name="utf8_latvian_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="123" parent="1" name="utf8_lithuanian_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="124" parent="1" name="utf8_persian_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="125" parent="1" name="utf8_polish_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="126" parent="1" name="utf8_roman_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="127" parent="1" name="utf8_romanian_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="128" parent="1" name="utf8_slovak_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="129" parent="1" name="utf8_slovenian_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="130" parent="1" name="utf8_spanish2_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="131" parent="1" name="utf8_spanish_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="132" parent="1" name="utf8_swedish_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="133" parent="1" name="utf8_turkish_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="134" parent="1" name="utf8_unicode_ci">
+      <Charset>utf8</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <table id="135" parent="4" name="BASICS_PARAMETER">
+      <Comment>系统基础支撑数据信息</Comment>
+    </table>
+    <table id="136" parent="4" name="INFO_ANNEXES">
+      <Comment>资讯附件表</Comment>
+    </table>
+    <table id="137" parent="4" name="INVENTORY">
+      <Comment>库存表</Comment>
+    </table>
+    <table id="138" parent="4" name="MULTI_LAN">
+      <Comment>多语言内容</Comment>
+    </table>
+    <table id="139" parent="4" name="ORDER_INFO">
+      <Comment>用户订购记录表</Comment>
+    </table>
+    <table id="140" parent="4" name="ORDER_LIST">
+      <Comment>用户订购商品表</Comment>
+    </table>
+    <table id="141" parent="4" name="USER_ACCOUNT_201312">
+      <Comment>用户总账表</Comment>
+    </table>
+    <table id="142" parent="4" name="USER_ACCOUNT_201404"/>
+    <table id="143" parent="4" name="USER_ACCOUNT_LOG_201404">
+      <Comment>用户总账明细表</Comment>
+    </table>
+    <table id="144" parent="4" name="USER_BUY">
+      <Comment>用户重复消费记录表(个人拿钱再买)</Comment>
+    </table>
+    <table id="145" parent="4" name="USER_BUY_BONUS">
+      <Comment>用户重复消费月奖励记录表</Comment>
+    </table>
+    <table id="146" parent="4" name="USER_CASH">
+      <Comment>用户PV提现记录表</Comment>
+    </table>
+    <table id="147" parent="4" name="USER_PAIR_201312">
+      <Comment>用户对碰记录表</Comment>
+    </table>
+    <table id="148" parent="4" name="USER_PLACE">
+      <Comment>用户安置记录表</Comment>
+    </table>
+    <table id="149" parent="4" name="USER_POINT">
+      <Comment>用户积分消费奖励记录表</Comment>
+    </table>
+    <table id="150" parent="4" name="USER_POINT_GOODS">
+      <Comment>用户积分领货记录表</Comment>
+    </table>
+    <table id="151" parent="4" name="USER_RECHARGE">
+      <Comment>用户汇款充值记录表</Comment>
+    </table>
+    <table id="152" parent="4" name="USER_REFER">
+      <Comment>用户推荐记录表</Comment>
+    </table>
+    <table id="153" parent="4" name="affiche"/>
+    <table id="154" parent="4" name="au_authority"/>
+    <table id="155" parent="4" name="au_function"/>
+    <table id="156" parent="4" name="au_role"/>
+    <table id="157" parent="4" name="au_user"/>
+    <table id="158" parent="4" name="data_dictionary"/>
+    <table id="159" parent="4" name="goods_info"/>
+    <table id="160" parent="4" name="goods_pack"/>
+    <table id="161" parent="4" name="goods_pack_affiliated"/>
+    <table id="162" parent="4" name="information"/>
+    <table id="163" parent="4" name="leave_message"/>
+    <table id="164" parent="4" name="reply"/>
+    <table id="165" parent="4" name="uploadtemp">
+      <Engine>InnoDB</Engine>
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <column id="166" parent="135" name="ID">
+      <Position>1</Position>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="167" parent="135" name="NAME">
+      <Position>2</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="168" parent="135" name="CODE">
+      <Position>3</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="169" parent="135" name="VALUE">
+      <Position>4</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="170" parent="135" name="DESCRIPTION">
+      <Position>5</Position>
+      <DataType>varchar(200)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="171" parent="135" name="DR">
+      <Position>6</Position>
+      <DataType>varchar(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="172" parent="135" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="173" parent="136" name="ID">
+      <Position>1</Position>
+      <Comment>GOODS_ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="174" parent="136" name="INFO_ID">
+      <Position>2</Position>
+      <DataType>varchar(32)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="175" parent="136" name="NAME">
+      <Position>3</Position>
+      <Comment>货品编码</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="176" parent="136" name="URL">
+      <Position>4</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="177" parent="136" name="STATE">
+      <Position>5</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="178" parent="136" name="TYPE">
+      <Position>6</Position>
+      <DataType>varchar(32)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="179" parent="136" name="UPLOAD_TIME">
+      <Position>7</Position>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="180" parent="136" name="SIZE">
+      <Position>8</Position>
+      <DataType>decimal(8)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="181" parent="136" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="182" parent="137" name="ID">
+      <Position>1</Position>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="183" parent="137" name="GOODS_ID">
+      <Position>2</Position>
+      <DataType>varchar(32)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="184" parent="137" name="NUM">
+      <Position>3</Position>
+      <DataType>decimal(8)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="185" parent="137" name="STATE">
+      <Position>4</Position>
+      <DataType>varchar(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="186" parent="137" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="187" parent="138" name="ELEMENT_ID">
+      <Position>1</Position>
+      <Comment>元素内容ID</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="188" parent="138" name="PAGE_PATH">
+      <Position>2</Position>
+      <Comment>页面文件路径</Comment>
+      <DataType>varchar(300)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="189" parent="138" name="SCN">
+      <Position>3</Position>
+      <Comment>简体中文</Comment>
+      <DataType>varchar(3000)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="190" parent="138" name="TCN">
+      <Position>4</Position>
+      <Comment>繁体中文</Comment>
+      <DataType>varchar(3000)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="191" parent="138" name="EN">
+      <Position>5</Position>
+      <Comment>英文</Comment>
+      <DataType>varchar(3000)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="192" parent="138" name="JP">
+      <Position>6</Position>
+      <Comment>日文</Comment>
+      <DataType>varchar(3000)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="193" parent="138" name="KR">
+      <Position>7</Position>
+      <Comment>韩文</Comment>
+      <DataType>varchar(3000)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="194" parent="138" name="FR">
+      <Position>8</Position>
+      <Comment>法文</Comment>
+      <DataType>varchar(3000)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="195" parent="138" name="RA">
+      <Position>9</Position>
+      <Comment>俄文</Comment>
+      <DataType>varchar(3000)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="196" parent="138" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ELEMENT_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="197" parent="139" name="ORDER_ID">
+      <Position>1</Position>
+      <Comment>ORDER_ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="198" parent="139" name="LIST_ID">
+      <Position>2</Position>
+      <DataType>varchar(32)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="199" parent="139" name="ORDER_TIME">
+      <Position>3</Position>
+      <Comment>订购时间</Comment>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="200" parent="139" name="ORDER_SN">
+      <Position>4</Position>
+      <Comment>订购单号</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="201" parent="139" name="PICK_USER_ID">
+      <Position>5</Position>
+      <Comment>收货用户ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="202" parent="139" name="REPEAT_PV">
+      <Position>6</Position>
+      <Comment>重消PV</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="203" parent="139" name="BASE_PV">
+      <Position>7</Position>
+      <Comment>基本PV</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="204" parent="139" name="SERVICE_FEE">
+      <Position>8</Position>
+      <Comment>服务费</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="205" parent="139" name="SHIP_FRE">
+      <Position>9</Position>
+      <Comment>快递费</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="206" parent="139" name="TAX">
+      <Position>10</Position>
+      <Comment>税费</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="207" parent="139" name="COUNTRY">
+      <Position>11</Position>
+      <Comment>收货国家</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="208" parent="139" name="TEL">
+      <Position>12</Position>
+      <Comment>联系电话</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="209" parent="139" name="MOBILE">
+      <Position>13</Position>
+      <Comment>手机</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="210" parent="139" name="EMAIL">
+      <Position>14</Position>
+      <Comment>电邮</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="211" parent="139" name="USER_ADDRESS">
+      <Position>15</Position>
+      <Comment>家庭住址</Comment>
+      <DataType>varchar(300)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="212" parent="139" name="POSTCODE">
+      <Position>16</Position>
+      <Comment>邮政编码</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="213" parent="139" name="STAT">
+      <Position>17</Position>
+      <Comment>0新建,1已提交,2已审核,3已发货,4已收货,5审核未通过</Comment>
+      <DataType>decimal(6)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="214" parent="139" name="SHIP_TYPE">
+      <Position>18</Position>
+      <Comment>快递类型</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="215" parent="139" name="SHIP_NUM">
+      <Position>19</Position>
+      <Comment>快递单号</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="216" parent="139" name="SHIP_TIME">
+      <Position>20</Position>
+      <Comment>发货时间</Comment>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="217" parent="139" name="RECEIVE_TIME">
+      <Position>21</Position>
+      <Comment>收货确认时间</Comment>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="218" parent="139" name="SHIP_NOTE">
+      <Position>22</Position>
+      <Comment>送货说明</Comment>
+      <DataType>varchar(300)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="219" parent="139" name="buy_user_id">
+      <Position>23</Position>
+      <Comment>付款用户ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="220" parent="139" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ORDER_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="221" parent="140" name="LIST_ID">
+      <Position>1</Position>
+      <Comment>LIST_ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="222" parent="140" name="GOODS_ID">
+      <Position>2</Position>
+      <DataType>varchar(32)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="223" parent="140" name="GOODS_SN">
+      <Position>3</Position>
+      <Comment>货品编码</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="224" parent="140" name="GOODS_NAME">
+      <Position>4</Position>
+      <Comment>货品名称</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="225" parent="140" name="GOODS_FORMAT">
+      <Position>5</Position>
+      <Comment>货品规格</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="226" parent="140" name="GOODS_NUM">
+      <Position>6</Position>
+      <Comment>数量</Comment>
+      <DataType>decimal(9)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="227" parent="140" name="EACH_PRICE">
+      <Position>7</Position>
+      <Comment>单价</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="228" parent="140" name="SUM_PRICE">
+      <Position>8</Position>
+      <Comment>总价</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="229" parent="140" name="DISCOUNT">
+      <Position>9</Position>
+      <Comment>折扣</Comment>
+      <DataType>decimal(6,4 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="230" parent="140" name="REAL_PRICE">
+      <Position>10</Position>
+      <Comment>实际价格</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="231" parent="140" name="CURRENCY">
+      <Position>11</Position>
+      <Comment>货币种类</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="232" parent="140" name="REAL_PV">
+      <Position>12</Position>
+      <Comment>实际PV</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="233" parent="140" name="PV_RATE">
+      <Position>13</Position>
+      <Comment>PV折算率</Comment>
+      <DataType>decimal(6,4 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="234" parent="140" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>LIST_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="235" parent="141" name="ACCOUNT_ID">
+      <Position>1</Position>
+      <Comment>ACCOUNT_ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="236" parent="141" name="USER_ID">
+      <Position>2</Position>
+      <DataType>varchar(32)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="237" parent="141" name="ACCOUNT_DATE">
+      <Position>3</Position>
+      <Comment>日期</Comment>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="238" parent="141" name="STAT">
+      <Position>4</Position>
+      <Comment>0开放,1奖励完成,2积分消费完成</Comment>
+      <DataType>decimal(6)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="239" parent="141" name="BASE_IN">
+      <Position>5</Position>
+      <Comment>基本入账</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="240" parent="141" name="BASE_OUT">
+      <Position>6</Position>
+      <Comment>基本出账</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="241" parent="141" name="BASE_BALANCE">
+      <Position>7</Position>
+      <Comment>基本余额</Comment>
+      <DataType>decimal(6,4 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="242" parent="141" name="REPEAT_IN">
+      <Position>8</Position>
+      <Comment>重消入账</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="243" parent="141" name="REPEAT_OUT">
+      <Position>9</Position>
+      <Comment>重消出账</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="244" parent="141" name="REPEAT_BALANCE">
+      <Position>10</Position>
+      <Comment>重消余额</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="245" parent="141" name="FREE_PV">
+      <Position>11</Position>
+      <Comment>还未够750PV，即够750PV后可分红的部分</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="246" parent="141" name="ALREADY_PV">
+      <Position>12</Position>
+      <Comment>积分消费后的分红PV（可领货不可重分红）</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="247" parent="141" name="BUY_PV">
+      <Position>13</Position>
+      <Comment>当天领货后的PV</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="248" parent="141" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ACCOUNT_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="249" parent="142" name="ACCOUNT_ID">
+      <Position>1</Position>
+      <Comment>主键ID</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="250" parent="142" name="USER_ID">
+      <Position>2</Position>
+      <Comment>用户主键ID</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="251" parent="142" name="ACCOUNT_DATE">
+      <Position>3</Position>
+      <Comment>日期</Comment>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="252" parent="142" name="STAT">
+      <Position>4</Position>
+      <Comment>总账状态</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="253" parent="142" name="BASE_IN">
+      <Position>5</Position>
+      <Comment>基本入账</Comment>
+      <DataType>double|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="254" parent="142" name="BASE_OUT">
+      <Position>6</Position>
+      <Comment>基本出账</Comment>
+      <DataType>double|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="255" parent="142" name="BASE_BALANCE">
+      <Position>7</Position>
+      <Comment>基本余额</Comment>
+      <DataType>double|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="256" parent="142" name="REPEAT_IN">
+      <Position>8</Position>
+      <Comment>重消入账</Comment>
+      <DataType>double|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="257" parent="142" name="REPEAT_OUT">
+      <Position>9</Position>
+      <Comment>重消出账</Comment>
+      <DataType>double|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="258" parent="142" name="REPEAT_BALANCE">
+      <Position>10</Position>
+      <Comment>重消余额</Comment>
+      <DataType>double|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="259" parent="142" name="FREE_PV">
+      <Position>11</Position>
+      <Comment>未分红重消PV</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="260" parent="142" name="ALREADY_PV">
+      <Position>12</Position>
+      <Comment>已分红未领货重消PV</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="261" parent="142" name="BUY_PV">
+      <Position>13</Position>
+      <Comment>已领货重消PV</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="262" parent="142" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ACCOUNT_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="263" parent="143" name="accountLogId">
+      <Position>1</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="264" parent="143" name="userId">
+      <Position>2</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="265" parent="143" name="actionTime">
+      <Position>3</Position>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="266" parent="143" name="actionDesc">
+      <Position>4</Position>
+      <Comment>动作摘要</Comment>
+      <DataType>varchar(300)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="267" parent="143" name="actionType">
+      <Position>5</Position>
+      <Comment>0辅消,1重消</Comment>
+      <DataType>decimal(6)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="268" parent="143" name="baseIn">
+      <Position>6</Position>
+      <Comment>基本入账</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="269" parent="143" name="baseOut">
+      <Position>7</Position>
+      <Comment>基本出账</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="270" parent="143" name="baseBalance">
+      <Position>8</Position>
+      <Comment>基本余额</Comment>
+      <DataType>decimal(6,4 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="271" parent="143" name="repeatIn">
+      <Position>9</Position>
+      <Comment>重消入账</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="272" parent="143" name="repeatOut">
+      <Position>10</Position>
+      <Comment>重消出账</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="273" parent="143" name="repeatBalance">
+      <Position>11</Position>
+      <Comment>重消余额</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="274" parent="143" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>accountLogId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="275" parent="144" name="BUY_ID">
+      <Position>1</Position>
+      <Comment>BUY_ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="276" parent="144" name="BUY_TIME">
+      <Position>2</Position>
+      <Comment>消费时间</Comment>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="277" parent="144" name="BONUS_USER_ID">
+      <Position>3</Position>
+      <Comment>拿奖金用户ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="278" parent="144" name="USER_ID">
+      <Position>4</Position>
+      <DataType>varchar(32)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="279" parent="144" name="BUY_PV">
+      <Position>5</Position>
+      <Comment>消费PV</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="280" parent="144" name="BONUS_RATE">
+      <Position>6</Position>
+      <Comment>奖金比率</Comment>
+      <DataType>decimal(6,4 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="281" parent="144" name="BONUS_PV">
+      <Position>7</Position>
+      <Comment>奖励PV</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="282" parent="144" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>BUY_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="283" parent="145" name="BUY_BONUS_ID">
+      <Position>1</Position>
+      <Comment>BUY_BONUS_ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="284" parent="145" name="BONUS_MONTH">
+      <Position>2</Position>
+      <Comment>月份</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="285" parent="145" name="CAL_TIME">
+      <Position>3</Position>
+      <Comment>计算时间</Comment>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="286" parent="145" name="BONUS_USER_ID">
+      <Position>4</Position>
+      <DataType>varchar(32)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="287" parent="145" name="BUY_PV">
+      <Position>5</Position>
+      <Comment>下属总消费PV</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="288" parent="145" name="BONUS_RATE">
+      <Position>6</Position>
+      <Comment>奖金比率</Comment>
+      <DataType>decimal(6,4 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="289" parent="145" name="BONUS_PV">
+      <Position>7</Position>
+      <Comment>总奖励PV</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="290" parent="145" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>BUY_BONUS_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="291" parent="146" name="CASH_ID">
+      <Position>1</Position>
+      <Comment>CASH_ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="292" parent="146" name="CASH_TIME">
+      <Position>2</Position>
+      <Comment>申请提现时间</Comment>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="293" parent="146" name="CASH_NUM">
+      <Position>3</Position>
+      <Comment>提现单号</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="294" parent="146" name="USER_ID">
+      <Position>4</Position>
+      <DataType>varchar(32)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="295" parent="146" name="CASH_PV">
+      <Position>5</Position>
+      <Comment>提现PV</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="296" parent="146" name="CURRENCY">
+      <Position>6</Position>
+      <Comment>提现货币</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="297" parent="146" name="PV_RATE">
+      <Position>7</Position>
+      <Comment>PV转换率</Comment>
+      <DataType>decimal(6,4 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="298" parent="146" name="CASH_MONEY">
+      <Position>8</Position>
+      <Comment>提现金额</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="299" parent="146" name="NOTE">
+      <Position>9</Position>
+      <Comment>提现备注</Comment>
+      <DataType>varchar(300)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="300" parent="146" name="FEE">
+      <Position>10</Position>
+      <Comment>手续费</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="301" parent="146" name="TAX">
+      <Position>11</Position>
+      <Comment>税费</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="302" parent="146" name="OTHER_FEE">
+      <Position>12</Position>
+      <Comment>其他费用</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="303" parent="146" name="BANK_NAME">
+      <Position>13</Position>
+      <Comment>提现银行名</Comment>
+      <DataType>varchar(300)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="304" parent="146" name="BANK_BRANCE">
+      <Position>14</Position>
+      <Comment>银行开户行名</Comment>
+      <DataType>varchar(300)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="305" parent="146" name="BANK_ACCOUNT">
+      <Position>15</Position>
+      <Comment>银行账号</Comment>
+      <DataType>varchar(300)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="306" parent="146" name="ACCOUNT_NAME">
+      <Position>16</Position>
+      <Comment>账号姓名</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="307" parent="146" name="STAT">
+      <Position>17</Position>
+      <Comment>0申请提现,1审核通过,2转账完毕</Comment>
+      <DataType>decimal(6)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="308" parent="146" name="CREDITED_MONEY">
+      <Position>18</Position>
+      <Comment>到账金额</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="309" parent="146" name="CREDITED_TIME">
+      <Position>19</Position>
+      <Comment>到账时间</Comment>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="310" parent="146" name="OPERATOR">
+      <Position>20</Position>
+      <Comment>操作人</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="311" parent="146" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>CASH_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="312" parent="147" name="PAIR_ID">
+      <Position>1</Position>
+      <Comment>PAIR_ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="313" parent="147" name="DATE">
+      <Position>2</Position>
+      <Comment>前一天的日期</Comment>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="314" parent="147" name="BONUS_USER_ID">
+      <Position>3</Position>
+      <DataType>varchar(32)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="315" parent="147" name="LEFT_USER">
+      <Position>4</Position>
+      <Comment>左用户总数</Comment>
+      <DataType>decimal(9)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="316" parent="147" name="RIGHT_USER">
+      <Position>5</Position>
+      <Comment>右用户总数</Comment>
+      <DataType>decimal(9)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="317" parent="147" name="LEFT_KEEP">
+      <Position>6</Position>
+      <Comment>左保留总数</Comment>
+      <DataType>decimal(9)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="318" parent="147" name="RIGHT_KEEP">
+      <Position>7</Position>
+      <Comment>右保留总数</Comment>
+      <DataType>decimal(9)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="319" parent="147" name="EACH_PV">
+      <Position>8</Position>
+      <Comment>从数据字典表取，目前是1000</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="320" parent="147" name="SUM_PAIR_PV">
+      <Position>9</Position>
+      <Comment>总碰PV</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="321" parent="147" name="BONUS_RATE">
+      <Position>10</Position>
+      <Comment>奖金比率</Comment>
+      <DataType>decimal(6,4 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="322" parent="147" name="BONUS_PV">
+      <Position>11</Position>
+      <Comment>对碰奖励PV</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="323" parent="147" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>PAIR_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="324" parent="148" name="PLACE_ID">
+      <Position>1</Position>
+      <Comment>PLACE_ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="325" parent="148" name="PLACE_TIME">
+      <Position>2</Position>
+      <Comment>安置时间</Comment>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="326" parent="148" name="BONUS_USER_ID">
+      <Position>3</Position>
+      <Comment>拿奖金用户ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="327" parent="148" name="USER_ID">
+      <Position>4</Position>
+      <DataType>varchar(32)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="328" parent="148" name="BUY_PV">
+      <Position>5</Position>
+      <Comment>消费PV</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="329" parent="148" name="BONUS_RATE">
+      <Position>6</Position>
+      <Comment>奖金比率</Comment>
+      <DataType>decimal(6,4 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="330" parent="148" name="BONUS_PV">
+      <Position>7</Position>
+      <Comment>安置奖励PV</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="331" parent="148" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>PLACE_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="332" parent="149" name="POINT_ID">
+      <Position>1</Position>
+      <Comment>POINT_ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="333" parent="149" name="BUY_TIME">
+      <Position>2</Position>
+      <Comment>消费时间</Comment>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="334" parent="149" name="BONUS_USER_ID">
+      <Position>3</Position>
+      <Comment>拿奖金用户ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="335" parent="149" name="USER_ID">
+      <Position>4</Position>
+      <DataType>varchar(32)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="336" parent="149" name="BUY_PV">
+      <Position>5</Position>
+      <Comment>消费PV</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="337" parent="149" name="BONUS_RATE">
+      <Position>6</Position>
+      <Comment>奖金比率</Comment>
+      <DataType>decimal(6,4 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="338" parent="149" name="BONUS_PV">
+      <Position>7</Position>
+      <Comment>奖励PV</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="339" parent="149" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>POINT_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="340" parent="150" name="POINT_GOODS_ID">
+      <Position>1</Position>
+      <Comment>POINT_GOODS_ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="341" parent="150" name="PICK_TIME">
+      <Position>2</Position>
+      <Comment>领货时间</Comment>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="342" parent="150" name="USER_ID">
+      <Position>3</Position>
+      <DataType>varchar(32)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="343" parent="150" name="BUY_PV">
+      <Position>4</Position>
+      <Comment>消费PV</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="344" parent="150" name="ORDER_ID">
+      <Position>5</Position>
+      <Comment>订单ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="345" parent="150" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>POINT_GOODS_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="346" parent="151" name="RECHARGE_ID">
+      <Position>1</Position>
+      <Comment>RECHARGE_ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="347" parent="151" name="RECHARGE_TIME">
+      <Position>2</Position>
+      <Comment>充值时间</Comment>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="348" parent="151" name="RECHARGE_NUM">
+      <Position>3</Position>
+      <Comment>充值单号</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="349" parent="151" name="USER_ID">
+      <Position>4</Position>
+      <DataType>varchar(32)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="350" parent="151" name="CURRENCY">
+      <Position>5</Position>
+      <Comment>充值货币</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="351" parent="151" name="RECHARGE_MONEY">
+      <Position>6</Position>
+      <Comment>充值金额</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="352" parent="151" name="NOTE">
+      <Position>7</Position>
+      <Comment>摘要备注</Comment>
+      <DataType>varchar(300)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="353" parent="151" name="CREDITED_MONEY">
+      <Position>8</Position>
+      <Comment>到账金额</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="354" parent="151" name="CREDITED_TIME">
+      <Position>9</Position>
+      <Comment>到账时间</Comment>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="355" parent="151" name="AUDIT_USER">
+      <Position>10</Position>
+      <Comment>审核人</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="356" parent="151" name="PV_RATE">
+      <Position>11</Position>
+      <Comment>PV比率</Comment>
+      <DataType>decimal(6,4 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="357" parent="151" name="PV">
+      <Position>12</Position>
+      <Comment>兑换后PV值</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="358" parent="151" name="BANK_NAME">
+      <Position>13</Position>
+      <Comment>充值银行名</Comment>
+      <DataType>varchar(300)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="359" parent="151" name="BANK_ACCOUNT">
+      <Position>14</Position>
+      <Comment>充值账号名</Comment>
+      <DataType>varchar(300)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="360" parent="151" name="PLATFORM">
+      <Position>15</Position>
+      <Comment>充值平台</Comment>
+      <DataType>varchar(300)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="361" parent="151" name="PARAM">
+      <Position>16</Position>
+      <Comment>充值接口参数</Comment>
+      <DataType>varchar(1000)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="362" parent="151" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>RECHARGE_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="363" parent="152" name="REFER_LOG_ID">
+      <Position>1</Position>
+      <Comment>REFER_LOG_ID</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="364" parent="152" name="REFER_TIME">
+      <Position>2</Position>
+      <Comment>推荐时间</Comment>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="365" parent="152" name="USER_ID">
+      <Position>3</Position>
+      <DataType>varchar(32)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="366" parent="152" name="REFER_ID">
+      <Position>4</Position>
+      <DataType>varchar(32)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="367" parent="152" name="BUY_PV">
+      <Position>5</Position>
+      <Comment>消费PV</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="368" parent="152" name="BONUS_RATE">
+      <Position>6</Position>
+      <Comment>奖金比率</Comment>
+      <DataType>decimal(6,4 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="369" parent="152" name="BONUS_PV">
+      <Position>7</Position>
+      <Comment>推荐奖励PV</Comment>
+      <DataType>decimal(12,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="370" parent="152" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>REFER_LOG_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="371" parent="153" name="id">
+      <Position>1</Position>
+      <Comment>主键ID</Comment>
+      <DataType>bigint(60)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="372" parent="153" name="code">
+      <Position>2</Position>
+      <Comment>编码</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="373" parent="153" name="title">
+      <Position>3</Position>
+      <Comment>标题</Comment>
+      <DataType>varchar(200)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="374" parent="153" name="content">
+      <Position>4</Position>
+      <Comment>内容</Comment>
+      <DataType>text|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="375" parent="153" name="publisher">
+      <Position>5</Position>
+      <Comment>发布人</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="376" parent="153" name="publishTime">
+      <Position>6</Position>
+      <Comment>发布时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="377" parent="153" name="startTime">
+      <Position>7</Position>
+      <Comment>生效时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="378" parent="153" name="endTime">
+      <Position>8</Position>
+      <Comment>失效时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="379" parent="153" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="380" parent="154" name="id">
+      <Position>1</Position>
+      <Comment>主键ID</Comment>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="381" parent="154" name="roleId">
+      <Position>2</Position>
+      <Comment>角色ID</Comment>
+      <DataType>bigint(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="382" parent="154" name="functionId">
+      <Position>3</Position>
+      <Comment>功能ID</Comment>
+      <DataType>bigint(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="383" parent="154" name="userTypeId">
+      <Position>4</Position>
+      <Comment>用户类型ID</Comment>
+      <DataType>bigint(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="384" parent="154" name="creationTime">
+      <Position>5</Position>
+      <Comment>创建时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="385" parent="154" name="createdBy">
+      <Position>6</Position>
+      <Comment>创建者</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="386" parent="154" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="387" parent="155" name="id">
+      <Position>1</Position>
+      <Comment>主键ID</Comment>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="388" parent="155" name="functionCode">
+      <Position>2</Position>
+      <Comment>功能编码</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="389" parent="155" name="functionName">
+      <Position>3</Position>
+      <Comment>功能名称</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="390" parent="155" name="funcUrl">
+      <Position>4</Position>
+      <Comment>功能URL</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="391" parent="155" name="parentId">
+      <Position>5</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="392" parent="155" name="creationTime">
+      <Position>6</Position>
+      <Comment>创建时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="393" parent="155" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="394" parent="156" name="id">
+      <Position>1</Position>
+      <Comment>主键ID</Comment>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="395" parent="156" name="roleCode">
+      <Position>2</Position>
+      <Comment>角色编码</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="396" parent="156" name="roleName">
+      <Position>3</Position>
+      <Comment>角色名称</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="397" parent="156" name="createDate">
+      <Position>4</Position>
+      <Comment>创建日期</Comment>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="398" parent="156" name="isStart">
+      <Position>5</Position>
+      <Comment>是否启用（0、未启用1、启用）</Comment>
+      <DataType>int(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="399" parent="156" name="createdBy">
+      <Position>6</Position>
+      <Comment>创建者</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="400" parent="156" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="401" parent="157" name="id">
+      <Position>1</Position>
+      <Comment>主键ID</Comment>
+      <DataType>bigint(20) unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="402" parent="157" name="loginCode">
+      <Position>2</Position>
+      <Comment>登录账号</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="403" parent="157" name="password">
+      <Position>3</Position>
+      <Comment>登录密码（初始密码为证件号码后六位）</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="404" parent="157" name="password2">
+      <Position>4</Position>
+      <Comment>二级密码（初始密码为证件号码后六位）</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="405" parent="157" name="userName">
+      <Position>5</Position>
+      <Comment>用户真实姓名</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="406" parent="157" name="sex">
+      <Position>6</Position>
+      <Comment>性别</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="407" parent="157" name="birthday">
+      <Position>7</Position>
+      <Comment>生日</Comment>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="408" parent="157" name="cardType">
+      <Position>8</Position>
+      <Comment>证件类型id</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="409" parent="157" name="cardTypeName">
+      <Position>9</Position>
+      <Comment>证件类型名称</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="410" parent="157" name="idCard">
+      <Position>10</Position>
+      <Comment>证件号码</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="411" parent="157" name="country">
+      <Position>11</Position>
+      <Comment>收货国家</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="412" parent="157" name="mobile">
+      <Position>12</Position>
+      <Comment>手机</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="413" parent="157" name="email">
+      <Position>13</Position>
+      <Comment>email</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="414" parent="157" name="userAddress">
+      <Position>14</Position>
+      <Comment>收获地址</Comment>
+      <DataType>varchar(200)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="415" parent="157" name="postCode">
+      <Position>15</Position>
+      <Comment>邮编</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="416" parent="157" name="createTime">
+      <Position>16</Position>
+      <Comment>注册时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="417" parent="157" name="referId">
+      <Position>17</Position>
+      <Comment>推荐人id（默认为当前登录用户id）</Comment>
+      <DataType>bigint(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="418" parent="157" name="referCode">
+      <Position>18</Position>
+      <Comment>推荐人编码（默认为当前登录用户loginCode）</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="419" parent="157" name="roleId">
+      <Position>19</Position>
+      <Comment>所属角色ID</Comment>
+      <DataType>bigint(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="420" parent="157" name="roleName">
+      <Position>20</Position>
+      <Comment>所属角色名称</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="421" parent="157" name="userType">
+      <Position>21</Position>
+      <Comment>用户类型id</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="422" parent="157" name="userTypeName">
+      <Position>22</Position>
+      <Comment>用户类型名称</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="423" parent="157" name="isStart">
+      <Position>23</Position>
+      <Comment>是否启用（1、启用2、未启用）</Comment>
+      <DataType>int(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="424" parent="157" name="lastUpdateTime">
+      <Position>24</Position>
+      <Comment>最新更新时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="425" parent="157" name="lastLoginTime">
+      <Position>25</Position>
+      <Comment>最后登录时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="426" parent="157" name="bankAccount">
+      <Position>26</Position>
+      <Comment>开户卡号</Comment>
+      <DataType>varchar(200)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="427" parent="157" name="bankName">
+      <Position>27</Position>
+      <Comment>开户行</Comment>
+      <DataType>varchar(200)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="428" parent="157" name="accountHolder">
+      <Position>28</Position>
+      <Comment>开户人</Comment>
+      <DataType>varchar(200)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="429" parent="157" name="idCardPicPath">
+      <Position>29</Position>
+      <Comment>身份证照片存放路径</Comment>
+      <DataType>varchar(200)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="430" parent="157" name="bankPicPath">
+      <Position>30</Position>
+      <Comment>银行卡照片存放路径</Comment>
+      <DataType>varchar(200)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="431" parent="157" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="432" parent="158" name="id">
+      <Position>1</Position>
+      <Comment>主键ID</Comment>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="433" parent="158" name="typeCode">
+      <Position>2</Position>
+      <Comment>类型编码</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="434" parent="158" name="typeName">
+      <Position>3</Position>
+      <Comment>类型名称</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="435" parent="158" name="valueId">
+      <Position>4</Position>
+      <Comment>类型值ID</Comment>
+      <DataType>int(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="436" parent="158" name="valueName">
+      <Position>5</Position>
+      <Comment>类型值Name</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="437" parent="158" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="438" parent="159" name="id">
+      <Position>1</Position>
+      <Comment>主键ID</Comment>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="439" parent="159" name="goodsSN">
+      <Position>2</Position>
+      <Comment>商品编码</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="440" parent="159" name="goodsName">
+      <Position>3</Position>
+      <Comment>商品名称</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="441" parent="159" name="goodsFormat">
+      <Position>4</Position>
+      <Comment>商品规格</Comment>
+      <DataType>text|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="442" parent="159" name="marketPrice">
+      <Position>5</Position>
+      <Comment>市场价</Comment>
+      <DataType>double|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="443" parent="159" name="realPrice">
+      <Position>6</Position>
+      <Comment>优惠价格</Comment>
+      <DataType>double|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="444" parent="159" name="state">
+      <Position>7</Position>
+      <Comment>状态（1、上架、2、下架）</Comment>
+      <DataType>int(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="445" parent="159" name="note">
+      <Position>8</Position>
+      <Comment>商品说明</Comment>
+      <DataType>text|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="446" parent="159" name="num">
+      <Position>9</Position>
+      <Comment>库存数量</Comment>
+      <DataType>int(20)|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="447" parent="159" name="unit">
+      <Position>10</Position>
+      <Comment>单位</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="448" parent="159" name="createTime">
+      <Position>11</Position>
+      <Comment>创建时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="449" parent="159" name="lastUpdateTime">
+      <Position>12</Position>
+      <Comment>最后更新时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="450" parent="159" name="createdBy">
+      <Position>13</Position>
+      <Comment>创建人</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="451" parent="159" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="452" parent="160" name="id">
+      <Position>1</Position>
+      <Comment>主键ID</Comment>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="453" parent="160" name="goodsPackName">
+      <Position>2</Position>
+      <Comment>套餐名称</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="454" parent="160" name="goodsPackCode">
+      <Position>3</Position>
+      <Comment>套餐编码</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="455" parent="160" name="typeId">
+      <Position>4</Position>
+      <Comment>套餐类型ID</Comment>
+      <DataType>int(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="456" parent="160" name="typeName">
+      <Position>5</Position>
+      <Comment>套餐类型NAME</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="457" parent="160" name="totalPrice">
+      <Position>6</Position>
+      <Comment>套餐总价（系统生成，保存时根据相关商品的优惠价*数量计算生成）</Comment>
+      <DataType>double|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="458" parent="160" name="state">
+      <Position>7</Position>
+      <Comment>状态（1、上架2、下架）</Comment>
+      <DataType>int(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="459" parent="160" name="note">
+      <Position>8</Position>
+      <Comment>备注说明</Comment>
+      <DataType>text|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="460" parent="160" name="num">
+      <Position>9</Position>
+      <Comment>库存数量</Comment>
+      <DataType>int(20)|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="461" parent="160" name="createdBy">
+      <Position>10</Position>
+      <Comment>创建人</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="462" parent="160" name="createTime">
+      <Position>11</Position>
+      <Comment>创建时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="463" parent="160" name="lastUpdateTime">
+      <Position>12</Position>
+      <Comment>最后更新时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="464" parent="160" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="465" parent="161" name="id">
+      <Position>1</Position>
+      <Comment>主键ID</Comment>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="466" parent="161" name="goodsPackId">
+      <Position>2</Position>
+      <Comment>商品套餐主表ID</Comment>
+      <DataType>bigint(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="467" parent="161" name="goodsInfoId">
+      <Position>3</Position>
+      <Comment>商品ID</Comment>
+      <DataType>bigint(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="468" parent="161" name="goodsNum">
+      <Position>4</Position>
+      <Comment>商品数量</Comment>
+      <DataType>int(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="469" parent="161" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="470" parent="162" name="id">
+      <Position>1</Position>
+      <Comment>主键ID</Comment>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="471" parent="162" name="title">
+      <Position>2</Position>
+      <Comment>标题</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="472" parent="162" name="content">
+      <Position>3</Position>
+      <Comment>内容</Comment>
+      <DataType>text|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="473" parent="162" name="state">
+      <Position>4</Position>
+      <Comment>发布状态（0、未发布 1、发布）默认为发布</Comment>
+      <DataType>int(20)|0s</DataType>
+      <DefaultExpression>1</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="474" parent="162" name="publisher">
+      <Position>5</Position>
+      <Comment>发布人</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="475" parent="162" name="publishTime">
+      <Position>6</Position>
+      <Comment>发布时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="476" parent="162" name="typeId">
+      <Position>7</Position>
+      <Comment>附件类型ID</Comment>
+      <DataType>int(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="477" parent="162" name="typeName">
+      <Position>8</Position>
+      <Comment>附件类型NAME</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="478" parent="162" name="fileName">
+      <Position>9</Position>
+      <Comment>附件名称</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="479" parent="162" name="filePath">
+      <Position>10</Position>
+      <Comment>附件存放路径</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="480" parent="162" name="fileSize">
+      <Position>11</Position>
+      <Comment>附件大小</Comment>
+      <DataType>double|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="481" parent="162" name="uploadTime">
+      <Position>12</Position>
+      <Comment>上传时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="482" parent="162" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="483" parent="163" name="id">
+      <Position>1</Position>
+      <Comment>主键ID</Comment>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="484" parent="163" name="createdBy">
+      <Position>2</Position>
+      <Comment>留言用户code</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="485" parent="163" name="messageCode">
+      <Position>3</Position>
+      <Comment>留言编码</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="486" parent="163" name="messageTitle">
+      <Position>4</Position>
+      <Comment>留言标题</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="487" parent="163" name="messageContent">
+      <Position>5</Position>
+      <Comment>留言内容</Comment>
+      <DataType>text|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="488" parent="163" name="state">
+      <Position>6</Position>
+      <Comment>状态（1、已回复0、未回复）</Comment>
+      <DataType>int(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="489" parent="163" name="createTime">
+      <Position>7</Position>
+      <Comment>留言时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="490" parent="163" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="491" parent="164" name="id">
+      <Position>1</Position>
+      <Comment>主键ID</Comment>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="492" parent="164" name="messageId">
+      <Position>2</Position>
+      <Comment>留言ID（主表）</Comment>
+      <DataType>bigint(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="493" parent="164" name="replyContent">
+      <Position>3</Position>
+      <Comment>回复内容</Comment>
+      <DataType>text|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="494" parent="164" name="createdBy">
+      <Position>4</Position>
+      <Comment>回复人</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="495" parent="164" name="createTime">
+      <Position>5</Position>
+      <Comment>回复时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="496" parent="164" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="497" parent="165" name="uploader">
+      <Position>1</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="498" parent="165" name="uploadType">
+      <Position>2</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="499" parent="165" name="uploadFilePath">
+      <Position>3</Position>
+      <DataType>varchar(200)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+  </database-model>
+</dataSource>
