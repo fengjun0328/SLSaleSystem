@@ -14,7 +14,7 @@
 	<meta name="author" content="Muhammad Usman">
 
 	<!-- The styles -->
-	<link  href="/statics/css/bootstrap-cerulean.css" rel="stylesheet">
+	<link  href="${path}/statics/css/bootstrap-cerulean.css" rel="stylesheet">
 	<style type="text/css">
 	  body {
 		padding-bottom: 40px;
@@ -98,8 +98,6 @@
 	<script src="${path}/statics/js/jquery-1.7.2.min.js"></script>
 	<!-- jQuery UI -->
 	<script src="${path}/statics/js/jquery-ui-1.8.21.custom.min.js"></script>
-	<!-- transition / effect library -->
-	<script src="${path}/statics/js/bootstrap-transition.js"></script>
 	<!-- alert enhancer library -->
 	<script src="${path}/statics/js/bootstrap-alert.js"></script>
 	<!-- modal / dialog library -->
@@ -141,8 +139,6 @@
 
 	<!-- select or dropdown enhancer -->
 	<script src="${path}/statics/js/jquery.chosen.min.js"></script>
-	<!-- checkbox, radio, and file input styler -->
-	<script src="${path}/statics/js/jquery.uniform.min.js"></script>
 	<!-- plugin for gallery image view -->
 	<script src="${path}/statics/js/jquery.colorbox.min.js"></script>
 	<!-- rich text editor library -->

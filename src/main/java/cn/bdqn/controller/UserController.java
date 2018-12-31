@@ -20,26 +20,32 @@ public class UserController {
     @Resource
     private UserService userService;
 
-    @RequestMapping(value = "/login.hmtl",method = RequestMethod.POST)
+    @RequestMapping(value = "/login.html",method = RequestMethod.POST)
     @ResponseBody
-    public Object index(@RequestParam  String loginCode, @RequestParam String password, HttpSession session){
-        logger.debug("==================>");
+    public int index(@RequestParam  String loginCode, @RequestParam String password, HttpSession session){
+        logger.debug("==================>"+loginCode+"_"+password);
        int result=userService.getUser(loginCode,password);
        if(result==1){
            //还要修改登录时间
            logger.debug("reslut:"+result);
-            return "success";
+//            return "success";
+            return  1;
        }else if(result==-1){
            logger.debug("reslut:"+result);
-           return "nologincode";
+//           return "nologincode";
+           return  -1;
        }else if(result==-2){
+
            logger.debug("reslut:"+result);
-           return  "failed";
+           return  -2;
+//           return  "failed";
        }else if(result==0){
            logger.debug("reslut:"+result);
-           return "pwderror";
+           return 0;
+//           return "pwderror";
        }
-       return "nodata";
+//       return "nodata";
+        return  2;
     }
 
     @RequestMapping("/main.html")
