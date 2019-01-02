@@ -6,39 +6,51 @@ import cn.bdqn.service.UserService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 
 @Service("userService")
 public class UserServiceImpl implements UserService {
    @Resource
    private UserMapper userMapper;
-
-    /**
-     * 登录的方法
-     * @param loginCode
-     * @param password
-     * @return -1 没有用户
-     * 1 登录成功
-     * 0 密码不对
-     * -2 异常
-     */
-    @Override
-    public int getUser(String loginCode, String password) {
-       User user=userMapper.getUser(loginCode);
-       try{
-           if(user==null){
-               return  -1;
-           }else{
-               if(user.getPassword().equals(password)){
-                   return 1;
-               }else{
-                   return 0;
-               }
-           }
-       }catch (Exception e){
-           e.printStackTrace();
-           return -2;
-       }
-
+    public List<User> getUserList(User user) throws Exception{
+        return userMapper.getUserList(user);
     }
+
+    public User getLoginUser(User user) throws Exception{
+        return userMapper.getLoginUser(user);
+    }
+
+    public int addUser(User user) throws Exception{
+        return userMapper.addUser(user);
+    }
+
+    public int deleteUser(User user) throws Exception{
+        return userMapper.deleteUser(user);
+    }
+
+    public int modifyUser(User user) throws Exception{
+        return userMapper.modifyUser(user);
+    }
+
+    public int count(User user) throws Exception {
+        return userMapper.count(user);
+    }
+
+    public User getUserById(User user) throws Exception {
+        return userMapper.getUserById(user);
+    }
+
+    public int delUserPic(User user) throws Exception {
+        return userMapper.delUserPic(user);
+    }
+
+    public int loginCodeIsExit(User user) throws Exception {
+        return userMapper.loginCodeIsExit(user);
+    }
+
+    public List<User> getUserListBySearch(User user) throws Exception {
+        return userMapper.getUserListBySearch(user);
+    }
+
 }
