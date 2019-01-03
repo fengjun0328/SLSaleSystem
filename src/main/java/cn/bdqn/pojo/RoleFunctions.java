@@ -1,13 +1,8 @@
 package cn.bdqn.pojo;
 
+
 import java.util.List;
 
-import cn.bdqn.pojo.Function;
-/**
- * RoleFunctions
- * @author bdqn_hl
- * @date 2014-2-21
- */
 public class RoleFunctions {
 	private Function mainFunction;
 	private List<Function> subFunctions;

@@ -1,7 +1,12 @@
 package cn.bdqn.util;
 
+
+import org.springframework.context.ApplicationContext;
+
+
 public class Constants {
-	public final static String USER_SESSION = "userSession";
-	public final static String SYS_MESSAGE = "message";
-	public final static int pageSize = 5;
+	public static final String SESSION_USER="userSession";
+	public static final String SESSION_BASE_MODEL="baseModel";
+	public static ApplicationContext cxt;
+	
 }

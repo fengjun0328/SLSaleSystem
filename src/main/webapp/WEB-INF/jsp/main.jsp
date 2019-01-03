@@ -1,5 +1,6 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-<%@include file="/WEB-INF/pages/common/head.jsp"%>
+<%@ page isELIgnored="false" %>
+<%@include file="/WEB-INF/jsp/common/head.jsp"%>
 			<div class="row-fluid sortable">		
 				<div class="box span12">
 					<div class="box-header well" data-original-title>
@@ -23,11 +24,7 @@
 					 </div>
 					</div><!--/span-->
 				</div><!--/row-->
-				
-				
-				
-				
-				<div class="row-fluid sortable">	
+				<div class="row-fluid sortable">
 				<div class="box span12">
 					<div class="box-header well" data-original-title>
 						<h2><i class="icon-file"></i> 资讯栏</h2>
@@ -53,4 +50,4 @@
 				
 				
 				
-<%@include file="/WEB-INF/pages/common/foot.jsp"%>
+<%@include file="/WEB-INF/jsp/common/foot.jsp"%>

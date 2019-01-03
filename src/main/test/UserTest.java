@@ -1,5 +1,5 @@
 import cn.bdqn.pojo.User;
-import cn.bdqn.service.UserService;
+import cn.bdqn.service.user.UserService;
 import cn.bdqn.util.RedisAPI;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -20,7 +20,8 @@ public class UserTest {
         User user=new User();
         user.setLoginCode("admin");
         user.setPassword("123456");
-        redisAPI.set("user",user.toString());
+        String result=redisAPI.get("adminad");
+        System.out.println(result);
         try {
             User loginUser=userService.getLoginUser(user);
             System.out.println(loginUser.getBankName());
