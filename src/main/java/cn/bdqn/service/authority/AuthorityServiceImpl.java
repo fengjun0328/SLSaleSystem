@@ -19,28 +19,23 @@ public class AuthorityServiceImpl implements AuthorityService{
 	private FunctionMapper functionMapper;
 	
 	public List<Authority> getList(Authority authority) throws Exception {
-		// TODO Auto-generated method stub
 		return mapper.getList(authority);
 	}
 
 	public int addAuthority(Authority authority) throws Exception {
-		// TODO Auto-generated method stub
 		return mapper.addAuthority(authority);
 	}
 
 	public int modifyAuthority(Authority authority) throws Exception {
-		// TODO Auto-generated method stub
 		return mapper.modifyAuthority(authority);
 	}
 
 	public int deleteAuthority(Authority authority) throws Exception {
-		// TODO Auto-generated method stub
 		return mapper.deleteAuthority(authority);
 	}
 
 	public boolean hl_delAddAuthority(Authority authority, String checkFuncList)
 			throws Exception {
-		// TODO Auto-generated method stub
 		String[] funcList = null;
 		mapper.deleteAuthority(authority);
 		if(null != checkFuncList && !checkFuncList.equals("")){
@@ -54,7 +49,6 @@ public class AuthorityServiceImpl implements AuthorityService{
 	}
 
 	public boolean hl_addAuthority(String[] ids,String createdBy) throws Exception {
-		// TODO Auto-generated method stub
 		Authority authority = new Authority();
 		authority.setRoleId(Integer.parseInt(ids[0]));
 		mapper.deleteAuthority(authority);
@@ -82,7 +76,6 @@ public class AuthorityServiceImpl implements AuthorityService{
 	}
 
 	public Authority getAuthority(Authority authority) throws Exception {
-		// TODO Auto-generated method stub
 		return mapper.getAuthority(authority);
 	}
 

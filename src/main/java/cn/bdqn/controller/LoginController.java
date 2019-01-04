@@ -48,22 +48,18 @@ public class LoginController extends  BaseController {
     @ResponseBody
     public boolean login(HttpSession session, @RequestParam  String loginCode, @RequestParam String password){
         logger.debug("=============>");
-            try {
-                User user = userService.getLoginUser(loginCode, password);
-                if(user!=null){
-                    session.setAttribute(Constants.SESSION_USER, user);
-                    User updateLoginTimeUser = new User();
-                    updateLoginTimeUser.setId(user.getId());
-                    updateLoginTimeUser.setLastLoginTime(new Date());
-                    userService.modifyUser(updateLoginTimeUser);
-                    updateLoginTimeUser = null;
-                    return true;
-                }
-            }catch (Exception e){
-                e.printStackTrace();
+        try {
+            User user = userService.getLoginUser(loginCode, password);
+            if(user!=null){
+                session.setAttribute(Constants.SESSION_USER, user);
+                user.setLastLoginTime(new Date());
+                userService.modifyUser(user);
+                return true;
             }
-            return  false;
-
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return  false;
     }
     /**
      * 注销的方法
@@ -75,7 +71,7 @@ public class LoginController extends  BaseController {
         session.removeAttribute(Constants.SESSION_USER);
         session.invalidate();
         this.setCurrentUser(null);
-        return "/";
+        return "index";
     }
 
     @RequestMapping("/main.html")
@@ -105,7 +101,7 @@ public class LoginController extends  BaseController {
                 String redisMenuListKeyString=redisAPI.get("menulist"+user.getRoleId());
                 logger.debug("++++++++++++++++++++++++:menuList from redis:"+redisMenuListKeyString);
                 if(redisMenuListKeyString!=null&&"".equals(redisMenuListKeyString)){
-                    return  new ModelAndView("/");
+                    return  new ModelAndView("index");
                 }else{
                     model.put("mList",redisMenuListKeyString);
                 }
@@ -140,7 +136,7 @@ public class LoginController extends  BaseController {
             session.setAttribute(Constants.SESSION_BASE_MODEL, model);
             return new ModelAndView("main",model);
         }else {
-            return  new ModelAndView("/");
+            return  new ModelAndView("index");
         }
     }
 

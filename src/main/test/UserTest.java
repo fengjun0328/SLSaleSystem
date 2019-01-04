@@ -17,17 +17,7 @@ public class UserTest {
     private RedisAPI redisAPI;
     @Test
     public void getUser(){
-        User user=new User();
-        user.setLoginCode("admin");
-        user.setPassword("123456");
-        String result=redisAPI.get("adminad");
-        System.out.println(result);
-        try {
-            User loginUser=userService.getLoginUser(user);
-            System.out.println(loginUser.getBankName());
-        }catch (Exception e){
-            e.printStackTrace();
-        }
+
 
     }
 

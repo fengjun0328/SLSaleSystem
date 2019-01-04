@@ -30,8 +30,7 @@ public class BaseController {
             HttpServletRequest request= ((ServletRequestAttributes)RequestContextHolder.getRequestAttributes()).getRequest();
             HttpSession session=request.getSession(false);
             if(session!=null){
-                this.currentUser=(User)session.getAttribute(Constants.USER_SESSION);
-
+                this.currentUser=(User)session.getAttribute(Constants.SESSION_USER);
             }else {
                 this.currentUser=null;
             }

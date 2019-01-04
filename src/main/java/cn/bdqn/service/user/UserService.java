@@ -19,6 +19,14 @@ public interface UserService {
 	 * @throws Exception
 	 */
 	public User getLoginUser(String loginCode,String password) throws Exception;
+
+    /**
+     * 用户名是否存在
+     * @param loginCode
+     * @return
+     * @throws Exception
+     */
+    public int loginCodeIsExits(String loginCode) throws Exception;
 	
 	/**
 	 * getUserById

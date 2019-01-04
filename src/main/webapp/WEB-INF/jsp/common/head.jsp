@@ -2,23 +2,9 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ page isELIgnored="false" %>
-<%
-	String path=request.getContextPath();
-	request.setAttribute("path",path);
-%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!--
-		Charisma v1.0.0
-
-		Copyright 2012 Muhammad Usman
-		Licensed under the Apache License v2.0
-		http://www.apache.org/licenses/LICENSE-2.0
-
-		http://usman.it
-		http://twitter.com/halalit_usman
-	-->
 	<meta charset="utf-8">
 	<title>SL会员商城</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,7 +12,7 @@
 	<meta name="author" content="Muhammad Usman">
 
 	<!-- The styles -->
-	<link href="${path}/statics/css/bootstrap-cerulean.css" rel="stylesheet">
+	<link href="/statics/css/bootstrap-cerulean.css" rel="stylesheet">
 	<style type="text/css">
 	  body {
 		padding-bottom: 40px;
@@ -43,43 +29,37 @@
 		color:black;
 	}
 	</style>
-	<link href="${path}/statics/css/bootstrap-responsive.css" rel="stylesheet">
-	<link href="${path}/statics/css/charisma-app.css" rel="stylesheet">
-	<link href="${path}/statics/css/jquery-ui-1.8.21.custom.css" rel="stylesheet">
-	<link href='${path}/statics/css/fullcalendar.css' rel='stylesheet'>
-	<link href='${path}/statics/css/fullcalendar.print.css' rel='stylesheet'  media='print'>
-	<link href='${path}/statics/css/chosen.css' rel='stylesheet'>
-	<link href='${path}/statics/css/uniform.default.css' rel='stylesheet'>
-	<link href='${path}/statics/css/colorbox.css' rel='stylesheet'>
-	<link href='${path}/statics/css/jquery.cleditor.css' rel='stylesheet'>
-	<link href='${path}/statics/css/jquery.noty.css' rel='stylesheet'>
-	<link href='${path}/statics/css/noty_theme_default.css' rel='stylesheet'>
-	<link href='${path}/statics/css/elfinder.min.css' rel='stylesheet'>
-	<link href='${path}/statics/css/elfinder.theme.css' rel='stylesheet'>
-	<link href='${path}/statics/css/jquery.iphone.toggle.css' rel='stylesheet'>
-	<link href='${path}/statics/css/opa-icons.css' rel='stylesheet'>
-	<link href='${path}/statics/css/uploadify.css' rel='stylesheet'>
+	<link href="/statics/css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="/statics/css/charisma-app.css" rel="stylesheet">
+	<link href="/statics/css/jquery-ui-1.8.21.custom.css" rel="stylesheet">
+	<link href='/statics/css/fullcalendar.css' rel='stylesheet'>
+	<link href='/statics/css/fullcalendar.print.css' rel='stylesheet'  media='print'>
+	<link href='/statics/css/chosen.css' rel='stylesheet'>
+	<link href='/statics/css/uniform.default.css' rel='stylesheet'>
+	<link href='/statics/css/colorbox.css' rel='stylesheet'>
+	<link href='/statics/css/jquery.cleditor.css' rel='stylesheet'>
+	<link href='/statics/css/jquery.noty.css' rel='stylesheet'>
+	<link href='/statics/css/noty_theme_default.css' rel='stylesheet'>
+	<link href='/statics/css/elfinder.min.css' rel='stylesheet'>
+	<link href='/statics/css/elfinder.theme.css' rel='stylesheet'>
+	<link href='/statics/css/jquery.iphone.toggle.css' rel='stylesheet'>
+	<link href='/statics/css/opa-icons.css' rel='stylesheet'>
+	<link href='/statics/css/uploadify.css' rel='stylesheet'>
 	<!-- 华丽丽滴分割线 北大青鸟 start 2014-->
 	<!-- add by bdqn_hl 2014-2-28 start-->
-	<link href='${path}/statics/localcss/userlist.css' rel='stylesheet'>
-	<link href='${path}/statics/localcss/rolelist.css' rel='stylesheet'>
-	<link href='${path}/statics/localcss/authoritymanage.css' rel='stylesheet'>
-	<link href='${path}/statics/localcss/dicmanage.css' rel='stylesheet'>
-	<link href='${path}/statics/localcss/affiche.css' rel='stylesheet'>
-	<link href='${path}/statics/localcss/information.css' rel='stylesheet'>
-	<link href='${path}/statics/localcss/addgoodspack.css' rel='stylesheet'>
-	<link href='${path}/statics/localcss/mymessage.css' rel='stylesheet'>
-	<link href='${path}/statics/localcss/messagelist.css' rel='stylesheet'>
-	<!-- add by bdqn_hl 2014-2-28 end-->
-	
-	<!-- 华丽丽滴分割线 北大青鸟 end 2014 -->
-	<!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
-	<!--[if lt IE 9]>
-	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+	<link href='/statics/localcss/userlist.css' rel='stylesheet'>
+	<link href='/statics/localcss/rolelist.css' rel='stylesheet'>
+	<link href='/statics/localcss/authoritymanage.css' rel='stylesheet'>
+	<link href='/statics/localcss/dicmanage.css' rel='stylesheet'>
+	<link href='/statics/localcss/affiche.css' rel='stylesheet'>
+	<link href='/statics/localcss/information.css' rel='stylesheet'>
+	<link href='/statics/localcss/addgoodspack.css' rel='stylesheet'>
+	<link href='/statics/localcss/mymessage.css' rel='stylesheet'>
+	<link href='/statics/localcss/messagelist.css' rel='stylesheet'>
 
+	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<!-- The fav icon -->
-	<link rel="shortcut icon" href="${path}/statics/img/favicon.ico">
+	<link rel="shortcut icon" href="/statics/img/favicon.ico">
 	<script>var tt = '${mList}';</script>
 </head>
 <body>
@@ -92,7 +72,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</a>
-				<a class="brand" href="${path}/main.html"> <img alt="Charisma Logo" src="${path}/statics/img/logo20.png" /> <span>SL会员商城</span></a>
+				<a class="brand" href="${path}/main.html"> <img alt="Charisma Logo" src="/statics/img/logo20.png" /> <span>SL会员商城</span></a>
 				<div class="btn-group pull-right" >
 					<ul class="nav">
 						<li><a href="#">你好，${user.loginCode}</a></li>
@@ -100,7 +80,7 @@
 						<li><a href="${path}/main.html">首页</a></li>
 						<li><a href="#">购物车</a></li>
 						<li><a href="#">留言板</a></li>
-						<li><a href="javascript:void();" class="btn-setting modifypwd">修改密码</a></li>
+						<li><a href="javascript:void();" class="btn-setting modifypwd" data-toggle="modal" data-target="#myModal">修改密码</a></li>
 						<li><a href="${path}/logout.html">注销</a></li>
 					</ul>
 				</div>
@@ -111,22 +91,22 @@
 					</div>
 					<div class="modal-body">
 						<p>
-								<label>请输入原密码：</label>
-								  <input id="oldpassword"  type="password">
-								  <span style="color:red;font-weight: bold;">*</span>
-								<label>请输入新密码：</label>
-								  <input id="newpassword"  type="password">
-								  <span style="color:red;font-weight: bold;">*新密码必须6位以上</span>
-								<label>再次输入新密码：</label>
-								  <input id="aginpassword"  type="password">
-								  <span style="color:red;font-weight: bold;">*</span>
+							<label>请输入原密码：</label>
+							<input id="oldpassword"  type="password">
+							<span style="color:red;font-weight: bold;">*</span>
+							<label>请输入新密码：</label>
+							<input id="newpassword"  type="password">
+							<span style="color:red;font-weight: bold;">*新密码必须6位以上</span>
+							<label>再次输入新密码：</label>
+							<input id="aginpassword"  type="password">
+							<span style="color:red;font-weight: bold;">*</span>
 						</p>
 						<p id="modifypwdtip">
 						</p>
 					</div>
 					<div class="modal-footer">
 						<a href="#" class="btn" data-dismiss="modal">取消</a>
-						<a href="#" id="modifySavePassword" class="btn btn-primary">修改</a>
+						<a href="#" id="/statics" class="btn btn-primary">修改</a>
 					</div>
 				</div>
 			</div>

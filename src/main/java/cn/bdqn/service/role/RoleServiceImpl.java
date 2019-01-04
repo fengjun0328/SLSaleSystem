@@ -52,11 +52,8 @@ public class RoleServiceImpl implements RoleService{
 		mapper.modifyRole(role);
 		int roleId = role.getId();
 		String roleName = role.getRoleName();
-		User user = new User();
-		user.setRoleId(roleId);
-		user.setRoleName(roleName);
 		if(null != roleName && !"".equals(roleName)){
-			userMapper.modifyUserRole(user);
+			userMapper.modifyUserRole(roleName,roleId);
 		}
 		return true;
 	}

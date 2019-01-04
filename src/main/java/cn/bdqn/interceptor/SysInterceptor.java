@@ -20,7 +20,7 @@ public class SysInterceptor extends HandlerInterceptorAdapter {
 		logger.debug("SysInterceptor preHandle ==========================");
 		HttpSession session=request.getSession();
 		String urlPath=request.getRequestURI();
-		User user=(User)session.getAttribute(Constants.USER_SESSION);
+		User user=(User)session.getAttribute(Constants.SESSION_USER);
 		if(user==null){
 			response.sendRedirect("/");
 			return  false;

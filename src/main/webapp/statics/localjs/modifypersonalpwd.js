@@ -1,3 +1,4 @@
+var path=$("#path").val();
 $("#saveloginpwd").click(function(){
 		var tip = $("#modifyloginpwdtip");
 		tip.html("");
@@ -25,15 +26,11 @@ $("#saveloginpwd").click(function(){
 			tip.html("对不起，您两次输入的密码不一致，请重新输入，谢谢。");
 			$("#againloginpwd").focus();
 		}else{
-			//userJson
-			user = new Object();
-			user.password = oldpwd;
-			user.password2 = newpwd;
 			$.ajax({
-				url: '/backend/modifyPwd.html',
+				url:path+ '/backend/modifyPwd.html',
 				type: 'POST',
-				data:{userJson:JSON.stringify(user)},
-				dataType: 'html',
+				data:{"newpwd":newpwd,"oldpwd":oldpwd},
+				dataType: 'json',
 				timeout: 1000,
 				error: function(){
 					alert("修改密码失败！请重试。");
@@ -48,12 +45,9 @@ $("#saveloginpwd").click(function(){
 					}else if("oldpwdwrong" == result){
 						tip.css("color","red");
 						tip.html("原密码不正确！请重试。");
-					}else if("nodata" == result){
-						tip.css("color","red");
-						tip.html("对不起，没有任何数据需要处理！请重试。");
 					}
 				}
-				});
+			});
 		}
 	});
 $("#savesecondpwd").click(function(){
@@ -83,15 +77,11 @@ $("#savesecondpwd").click(function(){
 		tip.html("对不起，您两次输入的密码不一致，请重新输入，谢谢。");
 		$("#againsecondpwd").focus();
 	}else{
-		//userJson
-		user = new Object();
-		user.password = oldpwd;
-		user.password2 = newpwd;
 		$.ajax({
-			url: '/member/savesecondpwd.html',
+			url:path+ '/member/savesecondpwd.html',
 			type: 'POST',
-			data:{userJson:JSON.stringify(user)},
-			dataType: 'html',
+            data:{"newpwd":newpwd,"oldpwd":oldpwd},
+            dataType: 'json',
 			timeout: 1000,
 			error: function(){
 				alert("修改密码失败！请重试。");
@@ -106,9 +96,6 @@ $("#savesecondpwd").click(function(){
 				}else if("oldpwdwrong" == result){
 					tip.css("color","red");
 					tip.html("原密码不正确！请重试。");
-				}else if("nodata" == result){
-					tip.css("color","red");
-					tip.html("对不起，没有任何数据需要处理！请重试。");
 				}
 			}
 		});

@@ -31,7 +31,16 @@ public class UserServiceImpl implements UserService{
 		return null;
 	}
 
-	@Override
+    @Override
+    public int loginCodeIsExits(String loginCode) throws Exception {
+        User user=mapper.getLoginUser(loginCode);
+        if(user!=null){
+            return 1;
+        }
+        return 0;
+    }
+
+    @Override
 	public User getUserById(Integer id) throws Exception {
 		return mapper.getUserById(id);
 	}
