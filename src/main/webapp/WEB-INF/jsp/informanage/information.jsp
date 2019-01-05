@@ -1,5 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-<%@include file="/WEB-INF/pages/common/head.jsp"%>
+<%@include file="/WEB-INF/jsp/common/head.jsp"%>
 <div>
 	<ul class="breadcrumb">
 		<li><a href="#">信息管理</a> <span class="divider">/</span></li>
@@ -222,7 +222,7 @@
 	 
 	 
 	 
-<%@include file="/WEB-INF/pages/common/foot.jsp"%>
+<%@include file="/WEB-INF/jsp/common/foot.jsp"%>
 <script type="text/javascript">
 	var dicJson =	[<c:forEach  items="${dicList}" var="dic"> 
 							{"valueId":"${dic.id}","valueName":"${dic.valueName}"},

@@ -42,7 +42,7 @@ public class InformationController extends BaseController {
 	private UploadTempService uploadTempService;
 	
 	
-	@RequestMapping(value="/informanage/portalInfoDetail.html", produces = {"text/html;charset=UTF-8"})
+	@RequestMapping(value="/informanage/portalInfoDetail.html")
 	public ModelAndView viewInfo(HttpSession session, @RequestParam Integer id, Model model){
 		Map<String,Object> baseModel= (Map<String,Object>)session.getAttribute(Constants.SESSION_BASE_MODEL);
 		if(baseModel == null){
@@ -358,7 +358,7 @@ public class InformationController extends BaseController {
 	}
 	
 	
-	@RequestMapping(value = "/informanage/upload.html", produces = {"text/html;charset=UTF-8"})  
+	@RequestMapping(value = "/informanage/upload.html")
 	@ResponseBody
     public Object upload(@RequestParam(value = "uploadInformationFile", required = false) MultipartFile uploadInformationFile,
     		@RequestParam(value = "uploadInformationFile", required = false) MultipartFile uploadInformationFileM, 
@@ -378,7 +378,6 @@ public class InformationController extends BaseController {
             try {
 				list = dataDictionaryService.getDataDictionaries(dataDictionary);
 			} catch (Exception e1) {
-				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
             int filesize = 500000000;

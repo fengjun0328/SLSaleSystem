@@ -619,7 +619,6 @@ public class UserController extends BaseController{
 		if(baseModel == null){
 			return new ModelAndView("redirect:/");
 		}else{
-
 			DataDictionary dataDictionary = new DataDictionary();
 			List<DataDictionary> cardTypeList = null;
 			try {

@@ -37,10 +37,9 @@ public class AuthorityController extends BaseController {
 	@Resource
 	private LoginController loginController;
 	
-	@RequestMapping(value = "/backend/modifyAuthority.html", produces = {"text/html;charset=UTF-8"})
+	@RequestMapping(value = "/backend/modifyAuthority.html")
 	@ResponseBody
 	public Object modifyAuthority(HttpSession session, @RequestParam String ids){
-		
 		String resultString = "nodata";
 		try {
 			if(null != ids){
@@ -126,7 +125,6 @@ public class AuthorityController extends BaseController {
 			try {
 				roleList = roleService.getRoleIdAndNameList();
 			} catch (Exception e) {
-				// TODO Auto-generated catch block
 				roleList = null;
 			}
 			model.addAllAttributes(baseModel);

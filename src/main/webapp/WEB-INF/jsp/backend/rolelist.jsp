@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8" isELIgnored="false" %>
 <%@include file="/WEB-INF/jsp/common/head.jsp"%>
 
 <div>
@@ -30,10 +30,8 @@
 							  </tr>
 						  </thead>   
 						  <tbody>
-						  
 						  <c:forEach items="${roleList}" var="role">
 							<tr>
-							
 								<td class="center"><input id="roleCode${role.id}" type="text" value="${role.roleCode}"/></td>
 								<td class="center"><input id="roleName${role.id}" type="text" value="${role.roleName}"/></td>
 								<td class="center"><fmt:formatDate value="${role.createDate}" pattern="yyyy-MM-dd"/></td>
@@ -58,10 +56,6 @@
 				</div>
 			</div><!--/span-->
 		</div><!--/row-->
-
-
-
-
 	<div class="modal hide fade" id="addRoleDiv">
 			<div class="modal-header">
 				<button type="button" id="addRoleClose" class="close" data-dismiss="modal">×</button>

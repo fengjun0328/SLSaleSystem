@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8" isELIgnored="false" %>
 <%@include file="/WEB-INF/jsp/common/head.jsp"%>
 
 <div>
@@ -48,24 +48,11 @@
 						   <h3 id="optitle"></h3>
 						  <div class="dicListContent">
 						  	<ul id="dicListUL">
-						  	<!-- 
-						  		<li>
-									<div>类型代码:</div>
-									<div>类型名称:</div>
-									<div>数据数值:<input type="text" id=""/></div>
-									<div>数值名称:<input type="text" id=""/></div>
-									<div class="editdiv">
-										<img src="/statics/img/ico10.png"> <img src="/statics/img/linkdel.png">
-									</div>
-								</li>
-							-->
 						  	</ul>
 						  	<ul id="addsubdicul">
 						  		<li id="addDicLiBtn" class="addDicLiBtn"><img src="/statics/img/winapp_add.png"/></li>
 						  	</ul>
 						  </div>
-						  
-						  
 						  </td>
 						  <tr>
 						  </tbody>
@@ -85,10 +72,6 @@
 								  <input id="typeCode"  type="text">
 								<label>类型名称：</label>
 								  <input id="typeName"  type="text">
-								  <!-- 
-								<label>数据名称：</label>
-								  <input id="valueName"  type="text">
-								   -->
 						</p>
 						<p id="addDictip">
 						</p>

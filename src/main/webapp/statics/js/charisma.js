@@ -87,7 +87,6 @@ $(document).ready(function(){
 		}
 		result = result +"</ul></li>";
 	}
-	alert(result);
 	$("#menus").append(result);
 	var current_theme = $.cookie('current_theme')==null ? 'cerulean' :$.cookie('current_theme');
 	switch_theme(current_theme);

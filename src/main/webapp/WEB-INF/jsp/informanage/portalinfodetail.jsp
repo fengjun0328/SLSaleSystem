@@ -1,5 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-<%@include file="/WEB-INF/pages/common/head.jsp"%>
+<%@include file="/WEB-INF/jsp/common/head.jsp"%>
 
 
 			<div class="row-fluid sortable">		
@@ -37,4 +37,4 @@
 				
 				
 				
-<%@include file="/WEB-INF/pages/common/foot.jsp"%>
+<%@include file="/WEB-INF/jsp/common/foot.jsp"%>

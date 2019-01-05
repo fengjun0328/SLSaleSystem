@@ -91,7 +91,6 @@ public class AfficheController extends BaseController {
 	@RequestMapping("/informanage/delAffiche.html")
 	@ResponseBody
 	public Object delAffiche(HttpSession session,@RequestParam Integer id){
-		
 		if(null == id || "".equals(id)){
 			return "nodata";
 		}else{

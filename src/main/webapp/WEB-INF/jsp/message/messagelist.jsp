@@ -1,5 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-<%@include file="/WEB-INF/pages/common/head.jsp"%>
+<%@include file="/WEB-INF/jsp/common/head.jsp"%>
 <div>
 	<ul class="breadcrumb">
 		<li><a href="#">信息管理</a> <span class="divider">/</span></li>
@@ -67,8 +67,8 @@
 					  	<li><a href="/message/messagelist.html?currentpage=1" title="首页">首页</a></li>
 					  	</c:otherwise>
 					   </c:choose>
-						<c:if test="${page.prevPages!=null}">
-							<c:forEach items="${page.prevPages}" var="num">
+						<c:if test="${page.prevjsp!=null}">
+							<c:forEach items="${page.prevjsp}" var="num">
 								<li><a href="/message/messagelist.html?currentpage=${num}"
 									class="number" title="${num}">${num}</a></li>
 							</c:forEach>
@@ -76,8 +76,8 @@
 						<li class="active">
 						  <a href="#" title="${page.page}">${page.page}</a>
 						</li>
-						<c:if test="${page.nextPages!=null}">
-							<c:forEach items="${page.nextPages}" var="num">
+						<c:if test="${page.nextjsp!=null}">
+							<c:forEach items="${page.nextjsp}" var="num">
 								<li><a href="/message/messagelist.html?currentpage=${num}" title="${num}">
 								${num} </a></li>
 							</c:forEach>
@@ -170,5 +170,5 @@
 			<ul id="viewreplylist"></ul>
 	 </div>
 	 
-<%@include file="/WEB-INF/pages/common/foot.jsp"%>
+<%@include file="/WEB-INF/jsp/common/foot.jsp"%>
 <script type="text/javascript" src="/statics/localjs/messagelist.js"></script> 

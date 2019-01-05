@@ -89,7 +89,7 @@ public class MessageController extends BaseController{
 		}
 	}
 	
-	@RequestMapping(value = "/message/getmessage.html", produces = {"text/html;charset=UTF-8"})
+	@RequestMapping(value = "/message/getmessage.html")
 	@ResponseBody
 	public Object getMessage(@RequestParam(value="id",required=false) String id){
 		String cjson = "";
@@ -110,7 +110,6 @@ public class MessageController extends BaseController{
 				messageReply.setReplyList(_replyList);
 				cjson =JSONArray.toJSONString(messageReply, SerializerFeature.WriteDateUseDateFormat);
 			} catch (Exception e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 				return "failed";
 			}
@@ -138,7 +137,6 @@ public class MessageController extends BaseController{
 					leaveMessageService.modifyLeaveMessage(leaveMessage);
 				}
 			} catch (Exception e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			return new ModelAndView("redirect:/message/messagelist.html");
@@ -148,7 +146,6 @@ public class MessageController extends BaseController{
 	@RequestMapping(value = "/backend/delmessage.html", produces = {"text/html;charset=UTF-8"})
 	@ResponseBody
 	public String delMessage(@RequestParam(value="delId",required=false) String delId){
-		
 		String result= "false" ;
 		LeaveMessage delLeaveMessage = new LeaveMessage();
 		delLeaveMessage.setId(Integer.valueOf(delId));
@@ -160,7 +157,6 @@ public class MessageController extends BaseController{
 				result = "success";
 			}
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return result;
@@ -181,7 +177,6 @@ public class MessageController extends BaseController{
 		
 		@RequestMapping("/message/addmessage.html")
 		public ModelAndView addMessage(@ModelAttribute("addMessage") LeaveMessage message,HttpSession session){
-			
 			if(session.getAttribute(Constants.SESSION_BASE_MODEL) == null){
 				return new ModelAndView("redirect:/");
 			}else{
@@ -195,7 +190,6 @@ public class MessageController extends BaseController{
 					}
 					leaveMessageService.addLeaveMessage(message);
 				} catch (Exception e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}

@@ -1,5 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-<%@include file="/WEB-INF/pages/common/head.jsp"%>
+<%@include file="/WEB-INF/jsp/common/head.jsp"%>
 <div>
 	<ul class="breadcrumb">
 		<li><a href="#">会员管理</a> <span class="divider">/</span></li>
@@ -31,5 +31,5 @@
 					</div>
 				</div>
 			</div>
-<%@include file="/WEB-INF/pages/common/foot.jsp"%>
+<%@include file="/WEB-INF/jsp/common/foot.jsp"%>
 <script type="text/javascript" src="/statics/localjs/registok.js"></script> 

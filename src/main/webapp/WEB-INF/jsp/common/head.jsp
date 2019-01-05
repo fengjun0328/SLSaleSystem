@@ -46,7 +46,6 @@
 	<link href='/statics/css/opa-icons.css' rel='stylesheet'>
 	<link href='/statics/css/uploadify.css' rel='stylesheet'>
 	<!-- 华丽丽滴分割线 北大青鸟 start 2014-->
-	<!-- add by bdqn_hl 2014-2-28 start-->
 	<link href='/statics/localcss/userlist.css' rel='stylesheet'>
 	<link href='/statics/localcss/rolelist.css' rel='stylesheet'>
 	<link href='/statics/localcss/authoritymanage.css' rel='stylesheet'>
@@ -72,12 +71,12 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</a>
-				<a class="brand" href="${path}/main.html"> <img alt="Charisma Logo" src="/statics/img/logo20.png" /> <span>SL会员商城</span></a>
+				<a class="brand" href="/main.html"> <img alt="Charisma Logo" src="/statics/img/logo20.png" /> <span>SL会员商城</span></a>
 				<div class="btn-group pull-right" >
 					<ul class="nav">
 						<li><a href="#">你好，${user.loginCode}</a></li>
 						<li><a href="#">角色：${user.roleName}</a></li>
-						<li><a href="${path}/main.html">首页</a></li>
+						<li><a href="/main.html">首页</a></li>
 						<li><a href="#">购物车</a></li>
 						<li><a href="#">留言板</a></li>
 						<li><a href="javascript:void();" class="btn-setting modifypwd" data-toggle="modal" data-target="#myModal">修改密码</a></li>

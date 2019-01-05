@@ -9,11 +9,7 @@ package cn.bdqn.util;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * PageSupport
- * @author bdqn_hl
- * @date 2014-2-24
- */
+
 public class PageSupport {
 
 	private Integer totalCount = 0;//总记录数
@@ -22,7 +18,6 @@ public class PageSupport {
 	private Integer page = 1;//当前页
 	private Integer num = 3;//当前页之前和之后显示的页数个数 如：假设当前页是 6 共有11页 那么 显示分页条会显示 1 2 3 4 5 [6] 7 8 9 10 11
 	private List items = new ArrayList();//当前页记录内容集合
-	
 	/**
 	 * 计算总页数
 	 * @param totalCount
@@ -32,7 +27,6 @@ public class PageSupport {
 			this.totalCount = totalCount;
 			this.pageCount  = (totalCount+pageSize-1)/pageSize;
 		}
-		
 	}
 	
 	/**

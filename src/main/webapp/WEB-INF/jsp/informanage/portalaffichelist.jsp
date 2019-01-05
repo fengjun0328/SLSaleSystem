@@ -1,5 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-<%@include file="/WEB-INF/pages/common/head.jsp"%>
+<%@include file="/WEB-INF/jsp/common/head.jsp"%>
 <div>
 	<ul class="breadcrumb">
 		<li><a href="/main.html">首页</a> <span class="divider">/</span></li>
@@ -80,4 +80,4 @@
 		</div><!--/row-->
 
 	 
-<%@include file="/WEB-INF/pages/common/foot.jsp"%>
+<%@include file="/WEB-INF/jsp/common/foot.jsp"%>
